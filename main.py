@@ -1,10 +1,10 @@
 # Inventario Jedi
 productos = [
-    {"nombre": "Sable de luz", "precio": 2000, "inventario": 90},
-    {"nombre": "Pistola laser", "precio": 1500, "inventario": 90},
-    {"nombre": "Pasaje a Naboo", "precio": 3000, "inventario": 90},
-    {"nombre": "Aerodeslizador", "precio": 2500, "inventario": 90},
-    {"nombre": "X-wing", "precio": 6500, "inventario": 90}
+    {"nombre": "Sable de luz", "precio": 2000, "inventario": 100},
+    {"nombre": "Pistola laser", "precio": 1500, "inventario": 80},
+    {"nombre": "Pasaje a Naboo", "precio": 3000, "inventario": 1000},
+    {"nombre": "Aerodeslizador", "precio": 2500, "inventario": 50},
+    {"nombre": "X-wing", "precio": 6500, "inventario": 150}
 ]
 
 total_compra = 0
