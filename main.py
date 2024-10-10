@@ -1,33 +1,28 @@
 productos = [
-    ("Manzana", 2000),
-    ("Pera", 1500),
-    ("Leche", 3000),
-    ("Arepas", 2500),
-    ("Jugo", 6500)
+    ("Sable de luz", 2000),
+    ("pistola laser", 1500),
+    ("pasaje a Naboo", 3000),
+    ("Aerodeslizador", 2500),
+    ("X-wing", 6500)
 ]
-print ("Productos: Manzana, Pera, Leche, Arepas, Jugo, o escribe terminar en caso de querer finalizar la búsqueda")
+print("-Bienvenido a starstore.com")
+print("-Productos: sable de luz, pistola laser, pasaje a naboo, Aerodeslizador, X-wing")
+print("-escribir tambien puedes 'terminar' si la busqueda finalizar quieres")
 
-nombre_producto = input("Ingrese el nombre del producto para consultar su precio: ")
+while True:
+    nombre_producto = input("Ingrese el nombre del producto para consultar su precio: ")
 
-producto_encontrado = False
-
-for producto in productos:
-    if producto[0].lower() == nombre_producto.lower():
-        print(f"El precio de {nombre_producto} es: ${producto[1]}")
-        producto_encontrado = True
+    if nombre_producto.lower() == "terminar":
+        print("Gracias por utilizar nuestro servicio, siempre bienvenido a starstore.com, que la fuerza te acompañe.")
         break
 
-if not producto_encontrado:
-    print("Lo sentimos, no vendemos o no encontramos lo que busca, verifique y digite denuevo.")
-nombre_producto = input("Ingrese el nombre del producto para consultar su precio: ")
+    producto_encontrado = False
 
-producto_encontrado = False
+    for producto in productos:
+        if producto[0].lower() == nombre_producto.lower():
+            print(f"El precio de {nombre_producto} es: ${producto[1]}")
+            producto_encontrado = True
+            break
 
-for producto in productos:
-    if producto[0].lower() == nombre_producto.lower():
-        print(f"El precio de {nombre_producto} es: ${producto[1]}")
-        producto_encontrado = True
-        break
-
-if not producto_encontrado:
-    print("Lo sentimos, no vendemos o no encontramos lo que busca, verifique y digite denuevo.")
+    if not producto_encontrado:
+        print("Lo sentimos, no vendemos o no encontramos lo que busca, verifique y digite de nuevo.")
