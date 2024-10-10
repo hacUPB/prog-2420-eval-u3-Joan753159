@@ -5,7 +5,7 @@ productos = [
     ("Arepas", 2500),
     ("Jugo", 6500)
 ]
-print ("Productos: Manzana, Pera, Leche, Arepas, Jugo")
+print ("Productos: Manzana, Pera, Leche, Arepas, Jugo, o escribe terminar en caso de querer finalizar la búsqueda")
 
 nombre_producto = input("Ingrese el nombre del producto para consultar su precio: ")
 
